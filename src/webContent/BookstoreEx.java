@@ -47,16 +47,16 @@ public class BookstoreEx {
 				}
 				break;
 			case 3:
-//				System.out.println("수정을 원하는 도서의 번호를 입력하세요.");
-//				bookNo = Integer.parseInt(sc.nextLine());
-//				bookstore = inputBookInfo(bookNo);
-//				
-//				result = BookstoreController.update(bookstore);
-//				if (result > 0) {
-//					System.out.println(bookstore.getTitle()+"수정 완료.");
-//				} else {
-//					System.out.println("수정 실패. 관리자에게 문의하세요.");
-//				}
+				System.out.println("수정을 원하는 도서의 번호를 입력하세요.");
+				bookNo = Integer.parseInt(sc.nextLine());
+				bookstore = inputBookInfo(bookNo);
+				
+				result = BookstoreController.update(bookstore);
+				if (result > 0) {
+					System.out.println(bookstore.getTitle()+"수정 완료.");
+				} else {
+					System.out.println("수정 실패. 관리자에게 문의하세요.");
+				}
 				break;
 			case 4:
 				System.out.println("프로그램이 종료됩니다.");
@@ -70,6 +70,18 @@ public class BookstoreEx {
 
 	}
 
+	private static Bookstore inputBookInfo(int bookNo) {
+		System.out.println("가격 입력 >>> ");
+		int price = Integer.parseInt(sc.nextLine());
+		System.out.println("제목 입력 >>> ");
+		String title = sc.nextLine();
+		System.out.println("출판사 입력 >>> ");
+		String publisherName = sc.nextLine();
+		
+		Bookstore bookstore = new Bookstore(bookNo, price, title, publisherName);
+		return bookstore;
+	}
+
 	private static Bookstore inputBookInfo() {
 		System.out.println("도서번호 입력 >>> ");
 		int bookNo = Integer.parseInt(sc.nextLine());
@@ -78,9 +90,9 @@ public class BookstoreEx {
 		System.out.println("제목 입력 >>> ");
 		String title = sc.nextLine();
 		System.out.println("출판사 입력 >>> ");
-		String publisher_name = sc.nextLine();
+		String publisherName = sc.nextLine();
 		
-		Bookstore bookstore = new Bookstore(bookNo, price, title, publisher_name);
+		Bookstore bookstore = new Bookstore(bookNo, price, title, publisherName);
 		
 		return bookstore;
 	}

@@ -48,5 +48,17 @@ public class BookstoreController {
 		}
 		
 		return result;
+	}
+
+	public static int update(Bookstore bookstore) {
+		int result = 0;
+		
+		try {
+			result = bookstoreService.updateInfo(bookstore);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return result;
 	} 
 }

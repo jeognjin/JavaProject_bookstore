@@ -10,4 +10,6 @@ public interface BookstoreDao {
 
 	public int deleteInfo(int bookNo) throws SQLException;
 
+	public int updateInfo(Bookstore bookstore) throws SQLException;
+
 }

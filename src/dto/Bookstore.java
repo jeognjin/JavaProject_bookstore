@@ -6,19 +6,19 @@ public class Bookstore {
 	private int bookNo;
 	private int price;
 	private String title;
-	private String publisher_name;
+	private String publisherName;
 	
 
 	public Bookstore() {
 	}
 
 
-	public Bookstore(int bookNo, int price, String title, String publisher_name) {
+	public Bookstore(int bookNo, int price, String title, String publisherName) {
 		super();
 		this.bookNo = bookNo;
 		this.price = price;
 		this.title = title;
-		this.publisher_name = publisher_name;
+		this.publisherName = publisherName;
 	}
 
 
@@ -52,20 +52,20 @@ public class Bookstore {
 	}
 
 
-	public String getPublisher_name() {
-		return publisher_name;
+	public String getPublisherName() {
+		return publisherName;
 	}
 
 
-	public void setPublisher_name(String publisher_name) {
-		this.publisher_name = publisher_name;
+	public void setPublisherName(String publisherName) {
+		this.publisherName = publisherName;
 	}
 
 
 	@Override
 	public String toString() {
-		return "Bookstore [bookNo=" + bookNo + ", price=" + price + ", title=" + title + ", publisher_name="
-				+ publisher_name + "]";
+		return "Bookstore [bookNo=" + bookNo + ", price=" + price + ", title=" + title + ", publisherName="
+				+ publisherName + "]";
 	}
 
 

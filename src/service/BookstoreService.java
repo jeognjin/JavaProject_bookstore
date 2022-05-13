@@ -10,4 +10,6 @@ public interface BookstoreService {
 
 	int deleteInfo(int bookNo) throws SQLException;
 
+	int updateInfo(Bookstore bookstore) throws SQLException;
+
 }

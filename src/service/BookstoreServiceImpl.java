@@ -32,4 +32,9 @@ public class BookstoreServiceImpl implements BookstoreService{
 		return dao.deleteInfo(bookNo);
 	}
 
+	@Override
+	public int updateInfo(Bookstore bookstore) throws SQLException {
+		return dao.updateInfo(bookstore);
+	}
+
 }
