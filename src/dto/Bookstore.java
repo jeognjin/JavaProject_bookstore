@@ -5,23 +5,23 @@ public class Bookstore {
 	// field
 	private int bookNo;
 	private int price;
-	private int pubNo;
 	private String title;
+	private String publisher_name;
 	
 
 	public Bookstore() {
 	}
 
-	//constructor
-	public Bookstore(int bookNo, int price, int pubNo, String title) {
+
+	public Bookstore(int bookNo, int price, String title, String publisher_name) {
 		super();
 		this.bookNo = bookNo;
 		this.price = price;
-		this.pubNo = pubNo;
 		this.title = title;
+		this.publisher_name = publisher_name;
 	}
 
-	//getter & setter
+
 	public int getBookNo() {
 		return bookNo;
 	}
@@ -42,16 +42,6 @@ public class Bookstore {
 	}
 
 
-	public int getPubNo() {
-		return pubNo;
-	}
-
-
-	public void setPubNo(int pubNo) {
-		this.pubNo = pubNo;
-	}
-
-
 	public String getTitle() {
 		return title;
 	}
@@ -61,79 +51,24 @@ public class Bookstore {
 		this.title = title;
 	}
 
-	//toString
+
+	public String getPublisher_name() {
+		return publisher_name;
+	}
+
+
+	public void setPublisher_name(String publisher_name) {
+		this.publisher_name = publisher_name;
+	}
+
+
 	@Override
 	public String toString() {
-		return "Bookstore [bookNo=" + bookNo + ", price=" + price + ", pubNo=" + pubNo + ", title=" + title + "]";
+		return "Bookstore [bookNo=" + bookNo + ", price=" + price + ", title=" + title + ", publisher_name="
+				+ publisher_name + "]";
 	}
+
 
 	
-
-	// field
-	private int bookNo;
-	private int price;
-	private int pubNo;
-	private String title;
-
-
-	public Bookstore() {
-	}
-
-	//constructor
-	public Bookstore(int bookNo, int price, int pubNo, String title) {
-		super();
-		this.bookNo = bookNo;
-		this.price = price;
-		this.pubNo = pubNo;
-		this.title = title;
-	}
-
-	//getter & setter
-	public int getBookNo() {
-		return bookNo;
-	}
-
-
-	public void setBookNo(int bookNo) {
-		this.bookNo = bookNo;
-	}
-
-
-	public int getPrice() {
-		return price;
-	}
-
-
-	public void setPrice(int price) {
-		this.price = price;
-	}
-
-
-	public int getPubNo() {
-		return pubNo;
-	}
-
-
-	public void setPubNo(int pubNo) {
-		this.pubNo = pubNo;
-	}
-
-
-	public String getTitle() {
-		return title;
-	}
-
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	//toString
-	@Override
-	public String toString() {
-		return "Bookstore [bookNo=" + bookNo + ", price=" + price + ", pubNo=" + pubNo + ", title=" + title + "]";
-	}
-
-
 	
 }
