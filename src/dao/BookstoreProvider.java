@@ -26,5 +26,3 @@ public class BookstoreProvider {
 		}
 		return conn;
 	}
-
-}
